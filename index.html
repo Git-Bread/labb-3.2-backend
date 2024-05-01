@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Labboration 1</title>
+    <meta name="description" content="Labboration 2.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.scss">
+    <script src="javascript.ts"></script>
+</head>
+<body>
+    <header>
+        <a href="#"><h2>Lista</h2></a>
+        <a href="add.html"><h2>Lägg till</h2></a>
+        <a href="about.html"><h2>Om Sidan</h2></a>
+    </header>
+    <section id="tableSection">
+        <table>
+            <tr>
+                <th id="head0">id</th>
+                <th id="head1">Företagsnamn</th>
+                <th id="head2">Arbetsroll</th>
+                <th id="head3">Startdatum</th>
+                <th id="head4">Slutdatum</th>
+            </tr>
+        </table>
+    </section>
+    <div id="error"></div>
+    <section>
+        <form>
+            <h2>Ta Bort Inlägg</h2>
+            <label for="opt">ID</label>
+            <select name="opt" id="opt">
+            </select>
+            <div>
+                <button type="button" id="removeButton">Ta bort</button>
+            </div>
+        </form>
+    </section>
+</body>

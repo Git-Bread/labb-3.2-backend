@@ -1,0 +1,12 @@
+{
+  "name": "labb-3.2-backend",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "run": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Max Gagner (maga2101)",
+  "license": "ISC"
+}
