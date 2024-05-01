@@ -43,12 +43,13 @@ async function populate() {
         let startObject = document.createElement("td");
         let endObject = document.createElement("td");
         let idListObject = document.createElement("option");
-        idObject.innerHTML = data[index].id;
-        idListObject.innerHTML = data[index].id;
+        idObject.innerHTML = data[index]._id;
+        idListObject.innerHTML = data[index]._id;
         nameObject.innerHTML = data[index].companyname;
         roleObject.innerHTML = data[index].jobtitle;
-        startObject.innerHTML = data[index].startdate as string;
-        endObject.innerHTML = data[index].enddate as string;
+        new Date(data[index].startdate);
+        startObject.innerHTML = data[index].startdate.split('T')[0];
+        endObject.innerHTML = data[index].enddate.split('T')[0];
         container.append(idObject);
         container.append(nameObject);
         container.append(roleObject);
