@@ -47,7 +47,6 @@ async function populate() {
         idListObject.innerHTML = data[index]._id;
         nameObject.innerHTML = data[index].companyname;
         roleObject.innerHTML = data[index].jobtitle;
-        new Date(data[index].startdate);
         startObject.innerHTML = data[index].startdate.split('T')[0];
         endObject.innerHTML = data[index].enddate.split('T')[0];
         container.append(idObject);
